@@ -1,6 +1,8 @@
+import React from "react";
+
 export function CounterButton({onClick, label}) {
     return (
-        <button onClick={onClick}>
+        <button className="sign" onClick={onClick}>
             {label}
         </button>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles/index.css';
-import App from './App.js';
+import App from './App.jsx';
 import store from './store/store.js';
 import { Provider } from 'react-redux'
 import {multiply} from './math.js';

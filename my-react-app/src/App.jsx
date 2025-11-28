@@ -2,7 +2,9 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from './features/counter/counterSlice';
 import './styles/index.css'
-
+import { CounterDisplay } from './features/counter/CounterDisplay';
+import { CounterButton } from './features/counter/CounterButton'
+ 
 const App = () => {
     const dispatch = useDispatch();
     const count = useSelector((state) => state.counter.value);
@@ -12,9 +14,9 @@ const App = () => {
             <div className='counter-card'>
                 <h1>Счет</h1>
                 <div className='counter-controls'>
-                    <button className='sign' onClick={() => dispatch(increment())}>+</button>
-                    <span className='counter-value'>{count}</span>
-                    <button className='sign' onClick={() => dispatch(decrement())}>-</button>
+                    <CounterButton label={'+'} onClick={() => dispatch(increment())}/> 
+                    <CounterDisplay count={count} />              
+                    <CounterButton label={'-'} onClick={() => dispatch(decrement())}/> 
                 </div>
             </div>
         </div>

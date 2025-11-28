@@ -1,3 +1,0 @@
-export function CounterDisplay({ count }) {
-    return <span>{count}</span>;
-}
