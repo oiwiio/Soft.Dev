@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { increment, decrement } from './features/counter/counterSlice';
-import './styles/index.css'
+import './styles/index.scss'
 import { CounterDisplay } from './features/counter/CounterDisplay';
 import { CounterButton } from './features/counter/CounterButton'
  
