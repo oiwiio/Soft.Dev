@@ -14,6 +14,7 @@ export const App = () => {
 
     return (
         <div className='app_background'>
+            
             <div className='counter-card'>
                 <h1>Счет</h1>
                 <div className='counter-controls'>
@@ -23,6 +24,7 @@ export const App = () => {
                 </div>
             </div>
             <UserList />
+            
         </div> 
         
     );
